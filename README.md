@@ -20,6 +20,8 @@ calculating multigeniture using rights and main commonrs.csv file
 #calculating mean number of rights in a community
 > summary(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
 
+#generating list of each unique community:
+
 > unique(mydata$community)
 #list of communities 
 [1] "AGUA FRIA ALTA"                     
