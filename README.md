@@ -4,9 +4,10 @@
 > jimenezytapia <- mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]
 > summary(jimenezytapia)  
 
-new dataframe for selected community
+new dataframe for selected community, example code
 > tally(jimenezytapia, rights < 1) 
-#calculating multigeniture using rights 
+
+calculating multigeniture using rights and main commonrs.csv file
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ], rights < 1)
 
