@@ -1,11 +1,6 @@
 # multigeniture
 
 > mydata <- read.csv("commoners.csv")
-> jimenezytapia <- mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]
-> summary(jimenezytapia)  
-
-new dataframe for selected community, example code
-> tally(jimenezytapia, rights < 1) 
 
 calculating multigeniture using rights and main commonrs.csv file
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
@@ -200,3 +195,9 @@ calculating multigeniture using rights and main commonrs.csv file
 
 #creating new table from list 
 > multigeniture <- data.table(unique(mydata$community))
+
+> jimenezytapia <- mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]
+> summary(jimenezytapia)  
+
+new dataframe for selected community, example code
+> tally(jimenezytapia, rights < 1) 
