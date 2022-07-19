@@ -3,11 +3,13 @@
 > mydata <- read.csv("commoners.csv")
 > jimenezytapia <- mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]
 > summary(jimenezytapia)  
-# new dataframe for selected community
+
+new dataframe for selected community
 > tally(jimenezytapia, rights < 1) 
 #calculating multigeniture using rights 
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ], rights < 1)
+
 # equation for M 
 > (tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ], rights < 1))/(tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]))
 # this value x 100 gives % multigeniture of this community! 
