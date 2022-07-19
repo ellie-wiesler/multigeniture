@@ -1,8 +1,5 @@
 # multigeniture
 
-# multigeniture
-# multigeniture
-
 > mydata <- read.csv("commoners.csv")
 > jimenezytapia <- mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ]
 > summary(jimenezytapia)  
