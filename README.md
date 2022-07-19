@@ -17,13 +17,16 @@ calculating multigeniture using rights and main commonrs.csv file
 
 #sample computation with another commmunity without creating new dataframe
 > (tally(mydata[ which(mydata$community == 'AGUA FRIA ALTA'), ], rights < 1))/(tally(mydata[ which(mydata$community == 'AGUA FRIA ALTA'), ]))
-#calculating mean number of rights in a community
+
+# calculating mean number of rights in a community 
 > summary(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
 
-#generating list of each unique community:
+# generating list of each unique community:
 
 > unique(mydata$community)
+
 #list of communities 
+
 [1] "AGUA FRIA ALTA"                     
   [2] "AGUA FRIA BAJA"                     
   [3] "ALHUEMILLA LAS PALMAS"              
