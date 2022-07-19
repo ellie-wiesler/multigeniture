@@ -6,7 +6,7 @@
 > summary(jimenezytapia)  
 # new dataframe for selected community
 
-tally(jimenezytapia, rights < 1) 
+> tally(jimenezytapia, rights < 1) 
 
 #calculating multigeniture using rights 
 > tally(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
@@ -21,10 +21,10 @@ tally(jimenezytapia, rights < 1)
 > (tally(mydata[ which(mydata$community == 'AGUA FRIA ALTA'), ], rights < 1))/(tally(mydata[ which(mydata$community == 'AGUA FRIA ALTA'), ]))
 
 #calculating mean number of rights in a community
-summary(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
+> summary(mydata[ which(mydata$community == 'JIMENEZ Y TAPIA'), ])
 
 
-unique(mydata$community)
+> unique(mydata$community)
 
 #list of communities 
 [1] "AGUA FRIA ALTA"                     
@@ -199,5 +199,5 @@ unique(mydata$community)
 [170] "CERRO BLANCO"            
 
 #creating new table from list 
-multigeniture <- data.table(unique(mydata$community))
+> multigeniture <- data.table(unique(mydata$community))
 
